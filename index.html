@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚽Cadastro</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+    </style>
+</head>
+
+<body>
+    <header class="cabeçalho">
+        <h1>Gincana<img src="css/img/logo.jpg" title="Gincana" alt="Logo Gincana"></h1>
+        <form>
+            <input placeholder='Pesquisar' />
+            <button>Enviar</button>
+        </form>
+        <nav class="navegação">
+            <a href='/home'>Home</a>
+            <a href='/sobre'>Sobre</a>
+            <a href='/contato'>Contato</a>
+        </nav>
+    </header>
+    <h1> ⚽Cadastro de Time para Gincana 2023</h1>
+    <div>
+        <form name="cadastro de time" method="get">
+            <fieldset>
+                <label>Nome Completo do Capitão:</label>
+                <input type="text" name="txt_nome" required placeholder="Nome Completo" title="Informe o nome" autofocus
+                    maxlength="50" /> <br>
+                <label>CPF:</label>
+                <input type="text" name="txt_cpf" pattern="[0-9]{3}[.][0-9]{3}[.][0-9]{3}[-][0-9]{2}"
+                    title="Informe um cpf no formato 999.999.999-99" placeholder="999.999.999-99" required /> <br>
+                <label>Data de Nascimento:</label>
+                <input type="date" name="txt_dtnasc"> <br>
+                <label>Sexo</label>
+                <input type="radio" name="sexo" value="M" checked>Masculino
+                <input type="radio" name="sexo" value="F">Feminino
+                <input type="radio" name="sexo" value="O">Outros <br>
+                Nome do Time
+                <input type="text" name="txt_time" required placeholder="Nome do Time" title="Informe o nome do time"
+                    maxlength="20" /> <br>
+                Quantidade de Atletas no time
+                <input type="number" name="Quantidade" min="10" max="22"> <br>
+            </fieldset>
+            <input class="btn" type="submit" value="Salvar">
+            <input class="btn" type="reset" value="Limpar">
+        </form>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <th>Capitão</th>
+                <th>CPF</th>
+                <th>Data de Nascimento</th>
+                <th>Sexo</th>
+                <th>Nome do Time</th>
+                <th>Quantidade de Atletas</th>
+                <th>Opções</th>
+            </tr>
+            <tr>
+                <td>João Luis</td>
+                <td>231.549.874-74</td>
+                <td>29/03/1992</td>
+                <td>Masculino</td>
+                <td>Guerreiros Dourados</td>
+                <td>13</td>
+                <td> <input class="btn" type="submit" value="Enviar"> <br> <input class="btn" type="reset"
+                        value="Remover"></td><br>
+            </tr>
+            <tr>
+                <td>Guilherme Santos</td>
+                <td>058.358.919-70</td>
+                <td>01/02/1993</td>
+                <td>Masculino</td>
+                <td>Loucous pela Vitória</td>
+                <td>16</td>
+                <td> <input class="btn" type="submit" value="Enviar"> <br> <input class="btn" type="reset"
+                        value="Remover"></td><br>
+            </tr>
+            <tr>
+                <td>Álvaro Duarte</td>
+                <td>625.334.822-18</td>
+                <td>14/09/1968</td>
+                <td>Masculino</td>
+                <td>Terceira idade ainda Joga</td>
+                <td>15</td>
+                <td> <input class="btn" type="submit" value="Enviar"> <br> <input class="btn" type="reset"
+                        value="Remover"></td><br>
+            </tr>
+            <tr>
+                <td>Tomás Costa</td>
+                <td>854.864.386-21</td>
+                <td>01/05/1997</td>
+                <td>Masculino</td>
+                <td>Jovens Dinamicos</td>
+                <td>17</td>
+                <td> <input class="btn" type="submit" value="Enviar"> <br> <input class="btn" type="reset"
+                        value="Remover"></td><br>
+            </tr>
+            <tr>
+                <td>Helena Campos</td>
+                <td>102.595.133-69</td>
+                <td>06/05/1988</td>
+                <td>Feminino</td>
+                <td>Cruzeiro do Norte</td>
+                <td>13</td>
+                <td> <input class="btn" type="submit" value="Enviar"> <br> <input class="btn" type="reset"
+                        value="Remover"></td><br>
+            </tr>
+            <tr>
+                <td>Beatriz Duarte</td>
+                <td>082.659.206-60</td>
+                <td>26/06/2000</td>
+                <td>Feminino</td>
+                <td>Ligados no 220W</td>
+                <td>13</td>
+                <td> <input class="btn" type="submit" value="Enviar"> <br> <input class="btn" type="reset"
+                        value="Remover"></td><br>
+            </tr>
+        </table>
+    </div>
+    <br><br><br><br><br><br><br>
+    <footer>
+        Fatec Itu, Todos os direitos reservados.© 
+      </footer>
+</body>
+
+</html>
